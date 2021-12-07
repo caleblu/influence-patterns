@@ -13,7 +13,7 @@ Data for agreement tasks including `wiki.vocab` and `marvin_linzen_dataset.tsv` 
  -   Subject-verb agreement tasks https://github.com/yoavg/bert-syntax 
  -   Reflexive Anaphora tasks https://github.com/yongjie-lin/bert-opensesame
 
-Model checkpoints are downloaded from 
+Model checkpoints are downloaded from https://github.com/google-research/bert. (L = 6, H = 512 is used in the paper for agreement tasks). 
 
 ### Dependencies
  - tensorflow 2.1.0
