@@ -1348,16 +1348,7 @@ def main():
                 "results/{}_gradp_{}_{}_test_{}_{}_indices_attn_greedy_{}.npy".
                 format(args.sentence_type, args.num_example, args.baseline_type,
                        batches, threshold, model_type), greedy_indices_attn)
-    inf, comb_greedy_val, comb_greedy_attn, indice_heatmap, indice_heatmap_attn, indices_greedy, indices_greedy_attn = convert_to_pattern_data(
-        mask_index=args.mask_index,
-        num_word=maxlen,
-        num_layer=args.num_layer,
-        num_data_shards=num_batches,
-        comb_greedy_i_raw=greedy_combs,
-        comb_greedy_attn_i_raw=greedy_combs_attn,
-        neg_ind_i_raw=reverse_qoi,
-        indices_greedy_i_raw=greedy_indices,
-        indices_greedy_attn_i_raw=greedy_indices_attn)
+
 
 
 if __name__ == "__main__":
