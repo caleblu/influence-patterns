@@ -32,7 +32,7 @@ A end to end demonstration of using the code base to replicate figure 3a and 3b 
 The core methods of influence patterns are in `influence_extractor.py`, and modifications of the bert code in `official/`, mostly under `official/nlp/modeling/layers` and `official/nlp/modeling/networks/transformer_encoder.py`. An example of extracting influence pattern metadata for 1000 examples of SVA-Across Object clauses (250 examples each for SS, SP, PS, PP):
 
 ```
-python influence_extractor.py --alpha 50 --num_example 250 --bert-dir /YOUR_DIRECTORY_TO_BERT_MODEL/uncased_L-6_H-512_A-8/   --sentence_type obj_rel_across_anim  --baseline_type 'mask'  --mask_indice 7 --threshold 0 --cuda 1
+python influence_extractor.py --alpha 50 --num_example 250 --bert-dir /YOUR_PATH_TO_BERT_MODEL/uncased_L-6_H-512_A-8/   --sentence_type obj_rel_across_anim  --baseline_type 'mask'  --mask_indice 7 --threshold 0 --cuda 1
 ```
 
 
